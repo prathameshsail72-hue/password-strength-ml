@@ -78,6 +78,13 @@ The model uses the following features:
 
 ---
 
+## 📊 Model Performance
+
+Accuracy: 91%
+F1 Score: 0.89
+
+---
+
 ## ⚙️ Installation
 
 ### 1. Clone the repository
