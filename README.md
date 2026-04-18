@@ -166,5 +166,5 @@ This project is open-source and available under the MIT License.
 
 ## 👨‍💻 Author
 
-Your Name
+Prathamesh Sail
 GitHub: https://github.com/prathameshsail72-hue
