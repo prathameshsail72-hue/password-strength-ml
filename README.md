@@ -151,7 +151,7 @@ The model is evaluated using:
 
 ## 📸 Demo
 
-### Password Predictions
+### Password Strength Predictions
 ![Demo 1](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/s1.png)
 ![Demo 2](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/s2.png)
 ![Demo 3](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/s3.png)
