@@ -144,11 +144,16 @@ The model is evaluated using:
 
 ## 📸 Demo
 
-![Password Strength Demo](assets/d1.png)
-![Password Strength Demo](assets/d2.png)
-![Password Strength Demo](assets/d3.png)
-![Output](assets/d4.png)
-![File Structure](assets/d5.png)
+### Password Predictions
+![Demo 1](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/d1.png)
+![Demo 2](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/d2.png)
+![Demo 3](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/d3.png)
+
+### Training Output
+![Output](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/d4.png)
+
+### Project Structure
+![Structure](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/d5.png)
 ---
 
 ## 🔮 Future Improvements
