@@ -145,9 +145,9 @@ The model is evaluated using:
 ## 📸 Demo
 
 ### Password Predictions
-![Demo 1](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/d1.png)
-![Demo 2](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/d2.png)
-![Demo 3](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/d3.png)
+![Demo 1](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/s1.png)
+![Demo 2](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/s2.png)
+![Demo 3](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/s3.png)
 
 ### Training Output
 ![Output](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/d4.png)
@@ -156,10 +156,18 @@ The model is evaluated using:
 ![Structure](https://raw.githubusercontent.com/prathameshsail72-hue/password-strength-ml/main/assets/d5.png)
 ---
 
+## 🌐 Web App Demo (Streamlit)
+
+Run the app locally:
+
+```bash```
+streamlit run app.py
+---
+
 ## 🔮 Future Improvements
 
 * Add API using FastAPI
-* Build web interface using Streamlit
+* Deploy it using Render
 * Integrate Have I Been Pwned API
 * Use deep learning (LSTM/Transformer)
 * Improve labeling strategy
