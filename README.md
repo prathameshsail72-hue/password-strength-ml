@@ -142,6 +142,15 @@ The model is evaluated using:
 
 ---
 
+## 📸 Demo
+
+![Password Strength Demo](assets/d1.png)
+![Password Strength Demo](assets/d2.png)
+![Password Strength Demo](assets/d3.png)
+![Output](assets/d4.png)
+![File Structure](assets/d5.png)
+---
+
 ## 🔮 Future Improvements
 
 * Add API using FastAPI
@@ -166,5 +175,5 @@ This project is open-source and available under the MIT License.
 
 ## 👨‍💻 Author
 
-Your Name
+Prathamesh Sail
 GitHub: https://github.com/prathameshsail72-hue
