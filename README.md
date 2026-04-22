@@ -1,42 +1,72 @@
 # 🔐 Password Strength Detection using Machine Learning
 
+## 🌐 Live Demo
+
+- 🔗 **Frontend (Streamlit App):** https://password-strength-ml.streamlit.app/ 
+- 🔗 **Backend API (FastAPI on Render):** https://password-strength-ml-m21m.onrender.com  
+- 📘 **API Docs:** https://password-strength-ml-m21m.onrender.com/docs  
+
+---
+
 ## 📌 Overview
 
-This project builds a machine learning model to classify password strength into three categories:
+This project is a **full-stack Machine Learning application** that evaluates password strength in real time.
 
-* Weak
-* Medium
-* Strong
+It combines:
+- 🧠 A trained ML model (Random Forest)
+- ⚡ A REST API built with FastAPI  
+- 🎨 An interactive UI built with Streamlit  
 
-The model is trained using real-world leaked password datasets and synthetic strong passwords, and uses feature engineering techniques to evaluate password complexity.
+Users can input a password and instantly get:
+- Strength classification (Weak / Medium / Strong)
+- Security insights (entropy, patterns)
+- Improvement suggestions
 
 ---
 
 ## 🚀 Features
 
-* Modular ML pipeline (data loading → preprocessing → feature engineering → training)
-* Feature-based password analysis (length, entropy, patterns, etc.)
-* Random Forest classifier for prediction
-* CLI-based password strength checker
-* Clean and scalable project structure
+### 🧠 Machine Learning
+- Feature-engineered password analysis
+- Entropy-based complexity measurement
+- Random Forest classifier (multi-class)
+
+### ⚡ Backend (API)
+- REST API using FastAPI  
+- JSON-based prediction endpoint (`/predict`)
+- Deployed on Render  
+
+### 🎨 Frontend (UI)
+- Interactive UI using Streamlit  
+- Password generator 🔁  
+- Strength score (0–100)  
+- Entropy calculation 📊  
+- Real-time feedback & suggestions  
+- API health monitoring  
 
 ---
 
-## 📂 Project Structure
 
+## 📂 Project Structure
 ```
 password-strength-ml/
 │
-├── data/                  # Dataset (rockyou.txt)
-├── models/                # Saved trained models
-├── src/
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── feature_engineering.py
-│   ├── model.py
-│   ├── train.py
+├── assets/ # Screenshots
+├── data/ # Dataset (rockyou.txt)
+├── models/ # Trained model (.pkl)
 │
-├── main.py                # Prediction script
+├── src/
+│ ├── data_loader.py
+│ ├── preprocessing.py
+│ ├── feature_engineering.py
+│ ├── model.py
+│ ├── train.py
+│
+├── api/
+│ └── main.py # FastAPI backend
+│
+├── streamlit_app.py # Streamlit frontend
+├── main.py # CLI prediction
 ├── requirements.txt
 └── README.md
 ```
@@ -56,32 +86,33 @@ data/rockyou.txt
 
 ---
 
-## 🧠 Feature Engineering
-
-The model uses the following features:
-
-* Password length
-* Number of uppercase/lowercase characters
-* Number of digits and special characters
-* Character ratios
-* Entropy (randomness measure)
-* Detection of common weak patterns (e.g., "123", "password")
-* Maximum repeated character sequence
+##🧠 Feature Engineering
+Password length
+Uppercase / lowercase count
+Digits & special characters
+Character ratios
+Entropy (randomness measure)
+Weak pattern detection ("123", "password")
+Repetition patterns
 
 ---
 
-## 🤖 Model
-
-* Algorithm: Random Forest Classifier
-* Library: scikit-learn
-* Multi-class classification (0 = Weak, 1 = Medium, 2 = Strong)
-
+##📊 Model Details
+Algorithm: Random Forest Classifier
+Library: scikit-learn
+Classes:
+0 → Weak
+1 → Medium
+2 → Strong
 ---
+
 
 ## 📊 Model Performance
 
-Accuracy: 91%
-F1 Score: 0.89
+📈 Performance
+Accuracy: ~91%
+F1 Score: ~0.89
+---
 
 ---
 
@@ -89,46 +120,24 @@ F1 Score: 0.89
 
 ### 1. Clone the repository
 
-```
-git clone https://github.com/your-username/password-strength-ml.git
+git clone https://github.com/prathameshsail72-hue/password-strength-ml.git
 cd password-strength-ml
-```
 
-### 2. Create virtual environment
-
-```
 python -m venv venv
 venv\Scripts\activate   # Windows
-```
 
-### 3. Install dependencies
-
-```
 pip install -r requirements.txt
-```
 
----
+Run Backend (API)
+uvicorn api.main:app --reload
 
-## ▶️ Usage
+Visit:
+http://127.0.0.1:8000/docs
 
-### Step 1: Train the model
+Run Frontend (Streamlit)
+streamlit run streamlit_app.py
 
-```
-python -m src.train
-```
 
-### Step 2: Run prediction
-
-```
-python main.py
-```
-
-### Example
-
-```
-Enter password: P@ssw0rd123
-Password strength: Medium
-```
 
 ---
 
@@ -141,11 +150,11 @@ The model is evaluated using:
 
 ---
 
-## ⚠️ Limitations
-
-* Does not check if password has been leaked (no breach database integration)
-* Strength is estimated based on patterns, not real attack simulations
-* Synthetic data may not fully represent real strong passwords
+##⚠️ Limitations
+No breach detection (e.g. leaked passwords)
+Rule-based + ML hybrid (not attack simulation)
+Synthetic strong passwords used for balancing
+Render free tier causes cold start delays
 
 ---
 
@@ -171,13 +180,12 @@ Run the app locally:
 streamlit run app.py
 ---
 
-## 🔮 Future Improvements
-
-* Add API using FastAPI
-* Deploy it using Render
-* Integrate Have I Been Pwned API
-* Use deep learning (LSTM/Transformer)
-* Improve labeling strategy
+##🔮 Future Improvements
+🔍 Integrate Have I Been Pwned API
+🧠 Deep Learning (LSTM / Transformers)
+📊 Confidence score output
+⚡ Caching & performance optimization
+🌍 Multi-language password analysis
 
 ---
 
