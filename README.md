@@ -180,7 +180,7 @@ Run the app locally:
 streamlit run app.py
 ---
 
-##🔮 Future Improvements
+## 🔮 Future Improvements
 🔍 Integrate Have I Been Pwned API
 🧠 Deep Learning (LSTM / Transformers)
 📊 Confidence score output
