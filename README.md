@@ -86,7 +86,7 @@ data/rockyou.txt
 
 ---
 
-##🧠 Feature Engineering
+## 🧠 Feature Engineering
 Password length
 Uppercase / lowercase count
 Digits & special characters
@@ -97,7 +97,7 @@ Repetition patterns
 
 ---
 
-##📊 Model Details
+## 📊 Model Details
 Algorithm: Random Forest Classifier
 Library: scikit-learn
 Classes:
@@ -150,7 +150,7 @@ The model is evaluated using:
 
 ---
 
-##⚠️ Limitations
+## ⚠️ Limitations
 No breach detection (e.g. leaked passwords)
 Rule-based + ML hybrid (not attack simulation)
 Synthetic strong passwords used for balancing
