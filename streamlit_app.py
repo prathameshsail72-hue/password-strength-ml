@@ -113,4 +113,29 @@ if st.button("Check Strength 🚀"):
                     st.error("🔴 Weak Password")
                 elif strength == "Medium":
                     st.warning("🟡 Medium Password")
-                elif strength == "
+                elif strength == "Strong":
+                    st.success("🟢 Strong Password 🎉")
+                    st.balloons()
+                else:
+                    st.info("⚪ Unable to classify")
+
+                with st.expander("💡 Improvement Tips"):
+                    st.write("""
+                    - Use at least 12+ characters  
+                    - Mix uppercase & lowercase  
+                    - Include numbers & symbols  
+                    - Avoid common patterns (123, password)  
+                    - Don’t reuse passwords  
+                    """)
+
+            else:
+                st.error(f"API error: {response.status_code}")
+                st.text(response.text)
+
+        except requests.exceptions.Timeout:
+            st.error("⏱️ Request timed out. The server is still booting up. Please try again in a few seconds.")
+        except Exception as e:
+            st.error(f"API Error: {e}")
+
+st.markdown("---")
+st.caption("Built with ❤️ using FastAPI + Streamlit + Machine Learning")
